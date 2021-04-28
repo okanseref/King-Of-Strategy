@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="add"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/frame2"
+        android:orientation="vertical">
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="#36FFFFFF" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="0.9"
+            android:orientation="vertical">
+
+            <TableRow
+                android:id="@+id/WIN"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#3EDB79FF">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="4">
+
+                        <ImageView
+                            android:id="@+id/imageView21"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4dp"
+                            android:visibility="visible"
+                            app:srcCompat="@drawable/ic_health" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/almendra"
+                            android:gravity="center_vertical"
+                            android:text="LOW HEALTH"
+                            android:textColor="#000000"
+                            android:textSize="22dp" />
+                    </TableRow>
+                </LinearLayout>
+
+            </TableRow>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.1">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="6dp">
+
+                <Button
+                    android:id="@+id/tamam_button2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buttonrect_effect"
+                    android:backgroundTint="@color/whiter"
+                    android:backgroundTintMode="src_over"
+                    android:drawableTop="@drawable/ic_treasure"
+                    android:fontFamily="@font/almendra"
+                    android:scaleX="1"
+                    android:scaleY="1"
+                    android:text="PAY 250 x \nREFILL HEALTH"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="16dp" />
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:padding="6dp">
+
+                <Button
+                    android:id="@+id/tamam_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/buttonrect_effect"
+                    android:backgroundTint="@color/whiter"
+                    android:backgroundTintMode="src_over"
+                    android:drawableTop="@drawable/rewarded_health"
+                    android:fontFamily="@font/almendra"
+                    android:scaleX="1"
+                    android:scaleY="1"
+                    android:text="WATCH AD\nREFILL HEALTH"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="16dp" />
+            </TableRow>
+
+        </LinearLayout>
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.5"
+            android:background="#36FFFFFF" />
+    </LinearLayout>
+
+</RelativeLayout>

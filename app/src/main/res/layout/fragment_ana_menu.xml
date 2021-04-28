@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:orientation="horizontal">
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="12dp"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/cerceve_name">
+
+                    <ImageView
+                        android:id="@+id/imageView26"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="2"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/ic_crown" />
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/almendra"
+                        android:gravity="center"
+                        android:maxLength="14"
+                        android:paddingLeft="4dp"
+                        android:text="Lord"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="18dp" />
+
+                    <ImageView
+                        android:id="@+id/imageView25"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="6dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_marginBottom="8dp"
+                        android:layout_weight="2"
+                        android:scaleType="fitCenter"
+                        app:srcCompat="@drawable/ic_crown" />
+
+                </LinearLayout>
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.9" />
+            </LinearLayout>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.5">
+
+                        <TextView
+                            android:id="@+id/level_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/almendra"
+                            android:gravity="center_horizontal|top"
+                            android:text="Level 2"
+                            android:textColor="@color/textColor"
+                            android:textSize="16dp" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1" />
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:background="@drawable/cerceve2"
+                        android:gravity="center">
+
+                        <ProgressBar
+                            android:id="@+id/progressBar2"
+                            style="@style/MyProgressBarThree"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:progress="50"
+                            android:progressBackgroundTint="#00FFFFFF"
+                            android:progressTint="#8325FFB8" />
+
+                        <TextView
+                            android:id="@+id/exp_text"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTint="#0CF8F2EA"
+                            android:backgroundTintMode="src_over"
+                            android:fontFamily="@font/almendra"
+                            android:gravity="center"
+                            android:text="TextView"
+                            android:textColor="@color/textColorBlue"
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="8dp"
+                        android:layout_weight="1.2"
+                        android:background="@drawable/cerceve_orta"
+                        android:gravity="center">
+
+                        <ImageView
+                            android:id="@+id/imageView24"
+                            android:layout_width="20dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="4dp"
+                            app:srcCompat="@drawable/skull" />
+
+                        <TextView
+                            android:id="@+id/balance_menu"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:backgroundTintMode="add"
+                            android:fontFamily="@font/almendra"
+                            android:gravity="center"
+                            android:text="120"
+                            android:textColor="@color/textColorGold"
+                            android:textSize="26dp"
+                            android:textStyle="bold" />
+                    </TableRow>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center">
+
+                        <TableRow
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerInParent="true"
+                            android:background="@drawable/cerceve2"
+                            android:backgroundTint="#0CF8F2EA"
+                            android:backgroundTintMode="src_over"
+                            android:rotation="180">
+
+                        </TableRow>
+
+                        <ProgressBar
+                            android:id="@+id/progressBar"
+                            style="@style/MyProgressBarThree"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:progress="80"
+                            android:progressBackgroundTint="#00FFFFFF"
+                            android:progressTint="#95FF2525"
+                            android:rotation="180" />
+
+                        <TextView
+                            android:id="@+id/health_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:backgroundTintMode="add"
+                            android:fontFamily="@font/almendra"
+                            android:gravity="center"
+                            android:text="44444"
+                            android:textColor="@color/textColorDarkRed"
+                            android:textSize="18dp"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </TableRow>
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.6">
+
+                <TextView
+                    android:id="@+id/textUpgrades"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/afff2"
+                    android:backgroundTint="@color/whiter"
+                    android:backgroundTintMode="src_over"
+                    android:fontFamily="@font/almendra"
+                    android:gravity="left|center_vertical"
+                    android:text="\t UPGRADES"
+                    android:textColor="@color/textColorBlack"
+                    android:textSize="20dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1.3">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1">
+
+                        <ImageButton
+                            android:id="@+id/button8"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/buttonrect_effect"
+                            android:backgroundTintMode="src_over"
+                            android:padding="10dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/archer_ic" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1">
+
+                        <ImageButton
+                            android:id="@+id/button9"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/buttonrect_effect"
+                            android:padding="10dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/sword_ic" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1">
+
+                        <ImageButton
+                            android:id="@+id/button10"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/buttonrect_effect"
+                            android:padding="10dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/horse_ic" />
+                    </TableRow>
+                </LinearLayout>
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.6">
+
+                <TextView
+                    android:id="@+id/textTactics"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginBottom="6dp"
+                    android:background="@drawable/afff2"
+                    android:backgroundTint="@color/whiter"
+                    android:backgroundTintMode="src_over"
+                    android:fontFamily="@font/almendra"
+                    android:gravity="left|center_vertical"
+                    android:text="\t TACTICS"
+                    android:textColor="@color/textColor"
+                    android:textSize="20dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1.2">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:baselineAligned="false"
+                    android:orientation="horizontal">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1">
+
+                        <ImageButton
+                            android:id="@+id/button_basict"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="4dp"
+                            android:background="@drawable/buttonrect_effect"
+                            android:padding="8dp"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/basic_tactics" />
+                    </TableRow>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1">
+
+                        <ImageButton
+                            android:id="@+id/button_impt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:background="@drawable/buttonrect_effect"
+                            android:backgroundTint="@color/darkTint"
+                            android:backgroundTintMode="multiply"
+                            android:padding="8dp"
+                            android:saveEnabled="false"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/improved_tactics"
+                            android:tint="@color/darkBackTint"
+                            android:tintMode="src_in" />
+
+                        <TextView
+                            android:id="@+id/textBlock1"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:backgroundTintMode="add"
+                            android:fontFamily="@font/almendra"
+                            android:gravity="center"
+                            android:rotation="-30"
+                            android:text="LEVEL 12"
+                            android:textColor="#BEBDBD"
+                            android:visibility="visible" />
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_weight="1">
+
+                        <ImageButton
+                            android:id="@+id/button_advt"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginTop="4dp"
+                            android:layout_marginEnd="4dp"
+                            android:layout_marginBottom="4dp"
+                            android:background="@drawable/buttonrect_effect"
+                            android:backgroundTint="@color/darkTint"
+                            android:backgroundTintMode="multiply"
+                            android:padding="4dp"
+                            android:scaleType="centerInside"
+                            android:src="@drawable/advanced_tactics"
+                            android:tint="@color/darkBackTint"
+                            android:tintMode="src_in" />
+
+                        <TextView
+                            android:id="@+id/textBlock2"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/almendra"
+                            android:gravity="center"
+                            android:rotation="-30"
+                            android:text="LEVEL 15"
+                            android:textColor="#BEBDBD"
+                            android:visibility="visible" />
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </TableRow>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="2" />
+        </LinearLayout>
+    </TableRow>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/home"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/buttonrecthigh_effect"
+                        android:backgroundTint="@color/whiter"
+                        android:backgroundTintMode="src_over"
+                        android:drawableTop="@drawable/ic_cards"
+                        android:fontFamily="@font/almendra"
+                        android:text="BET"
+                        android:textColor="@color/textColorBlack"
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/kinghallB"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/buttonrecthigh_effect"
+                        android:backgroundTint="@color/whiter"
+                        android:backgroundTintMode="src_over"
+                        android:drawableTop="@drawable/button_leaders"
+                        android:fontFamily="@font/almendra"
+                        android:gravity="center"
+                        android:text="KING HALL"
+                        android:textAlignment="inherit"
+                        android:textColor="@color/textColorBlack"
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="0.9">
+
+                    <Button
+                        android:id="@+id/next_battle"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/buttonrecthigh_effect"
+                        android:backgroundTint="@color/whiter"
+                        android:backgroundTintMode="src_over"
+                        android:drawableTop="@drawable/ic_battle2"
+                        android:fontFamily="@font/almendra"
+                        android:text="NEXT BATTLE"
+                        android:textColor="@color/textColorBlack"
+                        android:textSize="20dp" />
+                </TableRow>
+
+            </TableRow>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </TableRow>
+
+</LinearLayout>

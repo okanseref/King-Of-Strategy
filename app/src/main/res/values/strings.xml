@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">King Of Strategy</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="buff0_1">Increase Archer Base Damage By %6 (Fire) </string>
+    <string name="buff0_2">Incrase Archer Base Damage By %10 (Battle) </string>
+    <string name="buff0_3">Decrease Enemy Horseman Debuff On Archers By %9 (Fire) </string>
+    <string name="buff0_4">Archers Deal %12 Increased Damage To Enemy Horsemans (Fire) </string>
+    <string name="buff0_5">Decrease Enemy Archer Base Damage By %8 (Fire) </string>
+
+    <string name="buff1_1">Swordsmans Weaken Enemy Horsemans By %17 (Shock)</string>
+    <string name="buff1_2">Increase Swordsman Base Damage By %5 (Battle)</string>
+    <string name="buff1_3">Swordsmans %8 More Resistant To Enemy Archers (Fire)</string>
+    <string name="buff1_4">Increase Mixed Damage By %6 (Battle)</string>
+    <string name="buff1_5">Decrease Enemy Mixed Damage By %5 (Battle)</string>
+
+    <string name="buff2_1">Increase Horseman Base Damage By %6 (Shock) </string>
+    <string name="buff2_2">Decrease Enemy Swordsman Debuff On Horsemans By %11 (Shock)</string>
+    <string name="buff2_3">Increase Base Horse Damage By %8 (Battle) </string>
+    <string name="buff2_4">Increase Mixed Damage By %10 (Shock)</string>
+    <string name="buff2_5">Decrease Enemy Horseman Damage By %10 (Shock)</string>
+
+    <string name="buff3_1"><b> Cavalry Basics</b>\nAll Horsemans %10 Stronger At Shock Phase</string>
+    <string name="buff3_2"><b> Better Organization</b>\nAll Friendly Troops %5 Stronger At Every Phase</string>
+    <string name="buff3_3"><b> Anti-Shock Tactic</b>\nDecrease Shock Phase Length By 1</string>
+    <string name="buff3_4"><b> Wide Positioning</b>\nDecrease Damage Taken at Fire Phase by %25 </string>
+    <string name="buff3_5"><b> Bow To Knife</b>\nFriendly Archers %30 Stronger at Battle Phase</string>
+
+    <string name="buff4_1"><b> Frontal Ambush</b>\nEnemy Horsemans and Swordsmans %15 Weaker At Battle Phase</string>
+    <string name="buff4_2"><b> Anti-Ranged Rain</b>\nFriendly Archers Focus Enemy Archers And %30 Stronger At Fire Phase</string>
+    <string name="buff4_3"><b> Nordic Charge</b>\nIf You Have No Horsemans, Your Swordsmens %40 Stronger At Battle Phase</string>
+    <string name="buff4_4"><b> Death Circle</b>\nIf You Have More Troops At Battle Phase, Your Troops %30 Stronger At Battle Phase </string>
+    <string name="buff4_5"><b> Fear Dash</b>\nAll Enemies %10 Weaker At Every Phase</string>
+
+    <string name="buff5_1"><b> Burning Haystacks</b>\nDeal Huge Amount Of Damage At Fire Phase For Each Member Of Your Army</string>
+    <string name="buff5_2"><b> Shield Wall</b>\nPrevent An Enemy Archer Damage For Every Swordsman You Own</string>
+    <string name="buff5_3"><b> Riders Of HorseLand</b>\nStarts Shock Phase Immediately And Your Horsemans %35 Stronger</string>
+    <string name="buff5_4"><b> Great Horn</b>\nReinforcements Arrive At Battle Phase, Equal %30 Of Your Remaining Troops</string>
+    <string name="buff5_5"><b> To Arms!</b>\nAt Start Of Battle Phase All Friendly Troops Become Swordsmans But %10 Weaker</string>
+
+    <string name="op0"><b>King Edward</b>\n\tMin Level: 2\n\tFocus: Mixed Army\n\tStatus:</string>
+    <string name="op1"><b>Loabrader Raider</b>\n\tMin Level: 5\n\tFocus: Meele Combat\n\tStatus:</string>
+    <string name="op2"><b>Philopator Queen</b>\n\tMin Level: 7\n\tFocus: Shock Army\n\tStatus:</string>
+    <string name="op3"><b>Shah Musman</b>\n\tMin Level: 10\n\tFocus: Total Charge\n\tStatus: </string>
+    <string name="op4"><b>Emperor Tocha</b>\n\tMin Level: 12\n\tFocus: Elite Ranged Troops\n\tStatus:</string>
+    <string name="op5"><b>Ishida</b>\n\tMin Level: 15\n\tFocus: Deadly Meele Strenght\n\tStatus:</string>
+    <string name="op6"><b>Joan Darkmai</b>\n\tMin Level: 18\n\tFocus: Elite Mixed Army\n\tStatus:</string>
+
+    <string-array name="arr">
+        <item>No Tactic</item>
+        <item>Enemy Archers %18 Weaker At Fire Phase</item>
+        <item>All Swordsman %15 Weaker At Battle Phase</item>
+        <item>All Shock Phase Damages %20 Increased</item>
+    </string-array>
+
+</resources>

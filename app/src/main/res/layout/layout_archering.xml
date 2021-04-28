@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/clear_frame"
+    android:backgroundTintMode="add"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:background="@drawable/frame2_square"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/rw1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/clear_frame"
+            android:backgroundTint="#6399C74E">
+
+            <ImageView
+                android:id="@+id/buff_image"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.7"
+                android:visibility="visible"
+                app:srcCompat="@drawable/ic_arrows_buff" />
+
+            <TextView
+                android:id="@+id/reward_kill"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:fontFamily="@font/almendra"
+                android:gravity="center"
+                android:paddingLeft="6dp"
+                android:text="TextView"
+                android:textAlignment="textStart"
+                android:textColor="@color/textColorBlack"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/tolerance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.3"
+                android:fontFamily="@font/almendra"
+                android:gravity="center"
+                android:paddingRight="6dp"
+                android:text="TextView"
+                android:textAlignment="textEnd"
+                android:textColor="@color/textColorBlack"
+                android:textSize="18dp" />
+        </LinearLayout>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/what_is_point"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/whiter"
+                android:fontFamily="@font/almendra"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/textColorBlack"
+                android:textSize="24dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.2"
+            android:background="@color/whiter">
+
+            <ProgressBar
+                android:id="@+id/aim_progress"
+                style="@style/MyProgressBarFive"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:paddingTop="4dp"
+                android:paddingBottom="4dp"
+                android:progress="40" />
+        </TableRow>
+
+        <LinearLayout
+            android:id="@+id/rw2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@color/whiter">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.9" />
+
+            <Button
+                android:id="@+id/hold_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="4dp"
+                android:layout_weight="1"
+                android:background="@drawable/buttonrect_effect"
+                android:backgroundTint="@color/whiter"
+                android:backgroundTintMode="src_over"
+                android:fontFamily="@font/almendra"
+                android:scaleX="1"
+                android:scaleY="1"
+                android:text="HOLD"
+                android:textColor="@color/textColorBlack"
+                android:textSize="24dp" />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.9" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

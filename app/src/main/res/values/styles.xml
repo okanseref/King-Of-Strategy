@@ -1,0 +1,28 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="MyProgressBarTwo" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="colorButtonNormal">#F52D2D</item>
+        <item name="colorControlActivated">#80FF52</item>
+        <item name="colorControlHighlight">#ff6d00</item>
+        <item name="android:progressDrawable">@drawable/progressbardraw</item>
+        <item name="android:minWidth">200dp</item>
+    </style>
+    <style name="MyProgressBarThree" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="colorButtonNormal">#F52D2D</item>
+        <item name="colorControlActivated">#80FF52</item>
+        <item name="colorControlHighlight">#ff6d00</item>
+        <item name="android:progressDrawable">@drawable/progressbardraw2</item>
+        <item name="android:minWidth">200dp</item>
+    </style>
+    <style name="SpinnerTheme">
+        <item name="android:background">#00FFFFFF</item>
+    </style>
+</resources>

@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background"
+    android:orientation="vertical"
+    tools:context=".ShopForAll">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:gravity="right"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.9" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:background="@drawable/afff2"
+                android:orientation="horizontal"
+                android:padding="4dp">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.44"
+                    android:gravity="center"
+                    android:padding="4dp">
+
+                    <ImageView
+                        android:id="@+id/shop_image"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitCenter"
+                        android:src="@drawable/archer_ic" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:id="@+id/shop_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1.1"
+                        android:fontFamily="@font/almendra"
+                        android:gravity="center_vertical"
+                        android:paddingLeft="4dp"
+                        android:text="TextView"
+                        android:textColor="@color/textColor"
+                        android:textSize="18dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1.15">
+
+                    <TextView
+                        android:id="@+id/balance_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="4dp"
+                        android:layout_weight="1.5"
+                        android:fontFamily="@font/almendra"
+                        android:gravity="center_vertical|end"
+                        android:text="TextView"
+                        android:textColor="@color/textColorGold"
+                        android:textSize="22dp"
+                        android:textStyle="bold" />
+                </TableRow>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.25" />
+
+            <TableRow
+                android:id="@+id/row1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.13"
+                android:background="@drawable/buttonspecial"
+                android:gravity="start|center_vertical">
+
+                <TextView
+                    android:id="@+id/textView9"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="0.36"
+                    android:fontFamily="@font/almendra"
+                    android:gravity="start|center_vertical"
+                    android:text="TextView"
+                    android:textColor="@color/textColor"
+                    android:textSize="12dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/textView10"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="1.1"
+                    android:fontFamily="@font/almendra"
+                    android:gravity="start|center_vertical"
+                    android:text="TextView"
+                    android:textColor="@color/textColor"
+                    android:textSize="16dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.13"
+                android:background="@drawable/buttonspecial">
+
+                <TextView
+                    android:id="@+id/textView11"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="0.36"
+                    android:fontFamily="@font/almendra"
+                    android:gravity="start|center_vertical"
+                    android:text="TextView"
+                    android:textColor="@color/textColor"
+                    android:textSize="12dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="1.1"
+                    android:fontFamily="@font/almendra"
+                    android:gravity="start|center_vertical"
+                    android:text="TextView"
+                    android:textColor="@color/textColor"
+                    android:textSize="16dp" />
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row3"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.13"
+                android:background="@drawable/buttonspecial">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="0.36"
+                    android:fontFamily="@font/almendra"
+                    android:gravity="start|center_vertical"
+                    android:text="TextView"
+                    android:textColor="@color/textColor"
+                    android:textSize="12dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/textView14"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="1.1"
+                    android:fontFamily="@font/almendra"
+                    android:gravity="start|center_vertical"
+                    android:text="TextView"
+                    android:textColor="@color/textColor"
+                    android:textSize="16dp" />
+            </TableRow>
+
+
+            <TableRow
+                android:id="@+id/row4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.13"
+                android:background="@drawable/buttonspecial">
+
+                <TextView
+                    android:id="@+id/textView15"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="0.36"
+                    android:fontFamily="@font/almendra"
+                    android:gravity="start|center_vertical"
+                    android:text="TextView"
+                    android:textColor="@color/textColor"
+                    android:textSize="12dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/textView16"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="1.1"
+                    android:fontFamily="@font/almendra"
+                    android:gravity="start|center_vertical"
+                    android:text="TextView"
+                    android:textColor="@color/textColor"
+                    android:textSize="16dp" />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row5"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.13"
+                android:background="@drawable/buttonspecial">
+
+                <TextView
+                    android:id="@+id/textView17"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="8dp"
+                    android:layout_weight="0.36"
+                    android:fontFamily="@font/almendra"
+                    android:gravity="start|center_vertical"
+                    android:text="TextView"
+                    android:textColor="@color/textColor"
+                    android:textSize="12dp"
+                    android:textStyle="normal" />
+
+                <TextView
+                    android:id="@+id/textView18"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="4dp"
+                    android:layout_weight="1.1"
+                    android:fontFamily="@font/almendra"
+                    android:gravity="start|center_vertical"
+                    android:text="TextView"
+                    android:textColor="@color/textColor"
+                    android:textSize="16dp" />
+            </TableRow>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1.25" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/button_home"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/buttonrecthigh_effect"
+                        android:backgroundTint="@color/whiter"
+                        android:backgroundTintMode="src_over"
+                        android:drawableTop="@drawable/ic_home"
+                        android:fontFamily="@font/almendra"
+                        android:gravity="center|top"
+                        android:text="HOME"
+                        android:textSize="26dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:id="@+id/button_video"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/buttonrecthigh_effect"
+                        android:backgroundTint="@color/whiter"
+                        android:backgroundTintMode="src_over"
+                        android:drawableTop="@drawable/rewarded_gold"
+                        android:fontFamily="@font/almendra"
+                        android:gravity="center|top"
+                        android:text="x250"
+                        android:textSize="20dp" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="8dp"
+                    android:layout_weight="0.9">
+
+                    <Button
+                        android:id="@+id/button_buy"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="4dp"
+                        android:background="@drawable/buttonrecthigh_effect"
+                        android:backgroundTint="@color/whiter"
+                        android:backgroundTintMode="src_over"
+                        android:drawableTop="@drawable/ic_treasure"
+                        android:fontFamily="@font/almendra"
+                        android:gravity="center|top"
+                        android:text="BUY"
+                        android:textSize="26dp" />
+                </TableRow>
+
+            </TableRow>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </TableRow>
+</LinearLayout>
