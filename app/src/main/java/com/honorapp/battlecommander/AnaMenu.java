@@ -41,7 +41,6 @@ import static com.honorapp.battlecommander.BattlePre.oarc;
 import static com.honorapp.battlecommander.BattlePre.ohor;
 import static com.honorapp.battlecommander.BattlePre.osv;
 import static com.honorapp.battlecommander.MainActivity.adSwitch;
-import static com.unity3d.services.core.properties.ClientProperties.getApplicationContext;
 
 
 public class AnaMenu extends Fragment {

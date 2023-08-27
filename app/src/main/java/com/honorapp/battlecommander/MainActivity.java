@@ -16,11 +16,7 @@ import android.view.View;
 import android.view.WindowManager;
 import android.widget.Toast;
 
-import com.unity3d.ads.IUnityAdsListener;
-import com.unity3d.ads.UnityAds;
 import java.util.ArrayList;
-import com.unity3d.ads.IUnityAdsListener;
-import com.unity3d.ads.UnityAds;
 import static android.content.Intent.FLAG_ACTIVITY_NEW_TASK;
 
 public class MainActivity extends AppCompatActivity implements AnaMenu.Listener,BattlePre.Listener,BattleScreen.Listener,ShopForAll.Listener,KingHall.Listener,fragment_bet.Listener  {
@@ -45,9 +41,6 @@ public class MainActivity extends AppCompatActivity implements AnaMenu.Listener,
         setContentView(R.layout.activity_main);
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
-
-        final UnityAdsListener myAdsListener = new UnityAdsListener ();
-        UnityAds.initialize (this, unityGameID, myAdsListener, testMode);
 
         for(int i=0;i<30;i++){
             invnt.add(sharedPreferences.getInt(String.valueOf(i),0));
@@ -117,62 +110,8 @@ public class MainActivity extends AppCompatActivity implements AnaMenu.Listener,
             transaction.commit();
         }
         if(id==99){
-            DisplayRewardedVideoAd();
+            //
         }
 
-    }
-    public void DisplayRewardedVideoAd () {
-        if (UnityAds.isReady (placementId)) {
-            UnityAds.show (this);
-        }else{
-            Toast.makeText(this, "Check Your Internet Connection",
-                    Toast.LENGTH_LONG).show();
-        }
-    }
-    private class UnityAdsListener implements IUnityAdsListener {
-        @Override
-        public void onUnityAdsReady (String placementId) {
-            // Implement functionality for an ad being ready to show.
-        }
-
-        @Override
-        public void onUnityAdsStart (String placementId) {
-            // Implement functionality for a user starting to watch an ad.
-        }
-
-        @Override
-        public void onUnityAdsFinish (String placementId, UnityAds.FinishState finishState) {
-            // Implement conditional logic for each ad completion status:
-            if (finishState == UnityAds.FinishState.COMPLETED) {
-                SharedPreferences  sharedPreferences = PreferenceManager.getDefaultSharedPreferences(MainActivity.this);
-                SharedPreferences.Editor editor=sharedPreferences.edit();
-                switch (adSwitch){
-                    case 0:
-                        editor.putInt("health",100);
-                        editor.apply();
-                        break;
-                    case 1:
-                        editor.putBoolean("kingNextFight",true);
-                        editor.apply();
-                        break;
-                    case 2:
-                        editor.putInt("levelcheck",sharedPreferences.getInt("level",1));
-                        editor.putInt("balance",sharedPreferences.getInt("balance",50)+250);
-                        editor.apply();
-                        break;
-                    default:
-                        break;
-                }
-            } else if (finishState == UnityAds.FinishState.SKIPPED) {
-                // Do not reward the user for skipping the ad.
-            } else if (finishState == UnityAds.FinishState.ERROR) {
-                // Log an error.
-            }
-        }
-
-        @Override
-        public void onUnityAdsError (UnityAds.UnityAdsError error, String message) {
-            // Implement functionality for a Unity Ads service error occurring.
-        }
     }
 }

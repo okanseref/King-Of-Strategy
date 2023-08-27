@@ -85,7 +85,7 @@
 
             <ProgressBar
                 android:id="@+id/aim_progress"
-                style="@style/MyProgressBarFive"
+                style="@style/MyProgressBarTwo"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginTop="4dp"
